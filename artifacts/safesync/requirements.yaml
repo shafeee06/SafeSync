@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "For page transitions and smooth UI animations"
+  "recharts": "For the admin dashboard statistics and charts"
+  "date-fns": "For formatting SLA deadlines and timestamps"
+  "clsx": "For conditional tailwind class merging"
+  "tailwind-merge": "For conditional tailwind class merging"
+  "lucide-react": "For UI icons across the application"
+
+images:
+  - path: "artifacts/safesync/public/images/auth-bg.png"
+    description: "Abstract cybernetic city map with glowing neon purple and midnight blue lines, dark professional aesthetic, futuristic smart city concept"
+    aspect_ratio: "16:9"
+  - path: "artifacts/safesync/public/images/logo.png"
+    description: "Minimalist geometric shield logo combined with a synchronization symbol in glowing neon purple on a transparent background, professional civic tech style"
+    aspect_ratio: "1:1"
+
+notes:
+  - Using an interceptor on window.fetch in App.tsx to automatically inject the JWT token into all API requests made by the generated hooks.
+  - Using HTML5 MediaRecorder API for SOS audio recordings.
+  - Using navigator.geolocation for complaint location tagging.

@@ -1,0 +1,25 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm run typecheck && pnpm -r --if-present run build",
+    "typecheck:libs": "tsc --build",
+    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
+  },
+  "private": true,
+  "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.59.0",
+    "@tailwindcss/postcss": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "cross-env": "^10.1.0",
+    "lightningcss": "^1.32.0",
+    "prettier": "^3.8.1",
+    "tailwindcss": "catalog:",
+    "typescript": "~5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "lightningcss-win32-x64-msvc": "^1.32.0"
+  }
+}

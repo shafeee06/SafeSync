@@ -1,0 +1,290 @@
+Build a full-stack web application called **"SafeSync"** — a Civic Issue Reporting & Emergency Proof System.
+
+---
+
+## 👤 USER AUTHENTICATION
+
+* Secure authentication:
+
+  * Sign up (name, email, phone, password)
+  * Login / Logout
+* Each user must have a **personal dashboard**
+
+---
+
+## 🏠 USER DASHBOARD FEATURES
+
+### 1. Civic Issue Reporting
+
+* Users can submit complaints with:
+
+  * Title
+  * Description
+  * Image / Video upload
+* Automatically capture:
+
+  * Timestamp
+  * GPS location
+  * Device info
+* On submission:
+
+  * Generate **unique complaint ID**
+  * Store complaint + media
+  * Show acknowledgement
+
+---
+
+### 2. AI-Based Verification (Mock / Logic-Based)
+
+* Validate:
+
+  * Metadata (time + location)
+  * Media authenticity (basic placeholder logic)
+* Generate:
+
+  * Confidence Score (0–100%)
+  * Status:
+
+    * Verified ✅
+    * Flagged ⚠️
+
+---
+
+### 🎯 3. Reward System (Points Engine)
+
+* If complaint is **Verified AND Resolved**, user earns points:
+
+  * Base points: 10
+  * Bonus:
+
+    * High urgency issue → +5
+    * High confidence score → +5
+
+* Show in dashboard:
+
+  * Total Points
+  * Points History per complaint
+
+---
+
+### ⚠️ 4. Delay Penalty System (Black Mark)
+
+* If complaint is **not resolved within SLA time**:
+
+  * User can raise a **"Delay Flag"**
+* System assigns:
+
+  * **Black Mark ⚫** to that complaint
+* Effects:
+
+  * Visible in admin panel
+  * Affects department performance metrics
+
+---
+
+### 5. Complaint Tracking Dashboard
+
+* Users can view:
+
+  * Complaint ID
+  * Status:
+
+    * Pending
+    * Verified
+    * In Progress
+    * Resolved
+  * Verification score
+  * Assigned department
+  * Uploaded media
+  * Earned points / Black mark status
+
+---
+
+### 🚨 6. Emergency SOS Recording
+
+* Button: **"Start Emergency Recording"**
+* On trigger:
+
+  * Record audio/video silently
+  * Save with timestamp
+* Store securely and show in dashboard
+
+---
+
+### 🔔 7. Notifications
+
+* Notify users when:
+
+  * Complaint submitted
+  * Verified
+  * Routed
+  * Resolved
+  * Points awarded
+
+---
+
+## 🛠 ADMIN PANEL
+
+### 8. Admin Authentication
+
+* Separate secure login
+
+---
+
+### 9. Complaint Management
+
+* Admin can:
+
+  * View all complaints
+  * Filter by:
+
+    * Status
+    * Location
+    * Category
+
+* Actions:
+
+  * Verify complaint (if needed)
+  * Assign department:
+
+    * Roads
+    * Water
+    * Electricity
+    * Sanitation
+  * Update status:
+
+    * Received
+    * In Progress
+    * Resolved
+
+---
+
+### 10. Smart Routing
+
+* Auto-suggest department using keyword matching
+* Admin can override
+
+---
+
+### 11. SLA Monitoring System
+
+* Each complaint has:
+
+  * Defined resolution time
+* If exceeded:
+
+  * Mark as **Delayed**
+  * Allow black mark generation
+
+---
+
+### 12. Performance Tracking (Admin)
+
+* Track:
+
+  * Department performance
+  * Number of delays
+  * Black marks received
+
+---
+
+### 13. Audit Logs
+
+* Log:
+
+  * Complaint creation
+  * Verification results
+  * Status updates
+  * Admin actions
+
+---
+
+## ☁️ STORAGE
+
+* Store:
+
+  * Images
+  * Videos
+  * SOS recordings
+* Save file URLs in database
+
+---
+
+## ⚖️ SECURITY & ACCESS CONTROL
+
+* Users:
+
+  * Can only access their complaints & recordings
+* Admin:
+
+  * Full access
+* Ensure:
+
+  * Secure uploads
+  * Data protection
+
+---
+
+## 🧱 TECH STACK
+
+* Frontend: React / Next.js
+* Backend: Node.js + Express
+* Database: MongoDB
+* Storage: Cloudinary / Firebase
+* Auth: JWT
+
+---
+
+## 🔄 COMPLETE WORKFLOW
+
+1. User logs in → dashboard
+2. Submits complaint with media
+3. System verifies → assigns confidence score
+4. Admin reviews → routes to department
+5. Status updates (Received → In Progress → Resolved)
+6. If resolved:
+
+   * User gets reward points 🎯
+7. If delayed:
+
+   * User raises flag → Black mark ⚫
+8. User tracks everything in dashboard
+9. SOS recordings stored securely
+
+---
+
+## ❗ IMPORTANT RULES
+
+* DO NOT include blockchain
+* Focus on:
+
+  * Clean UI
+  * Real-time updates
+  * Scalable architecture
+* Ensure modular code structure
+
+---
+
+## 🎯 FINAL OUTPUT
+
+* User Dashboard
+* Complaint Submission Page
+* Admin Panel
+* Reward + Penalty System
+* SOS Recording Feature
+* Fully functional APIs
+🎨 COLOR THEME
+
+Primary Background: #1E1E2F (Midnight Blue)
+
+Accent Color: #8A2BE2 (Neon Purple)
+
+Secondary Background / Cards: #F4F6FC (Ice White)
+
+Text Colors:
+
+Primary text: White (#FFFFFF)
+
+Secondary text: #CFCFEA
+
+
